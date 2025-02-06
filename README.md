@@ -20,9 +20,9 @@ index.html
 blog.html
 
 You can view this project live at the following URL:
-[View the webpage](https://sriya632.github.io/Front-end-practice/blob/main/index.html)
+[View the webpage](https://sriya632.github.io/Front-end-practice/index.html)
 
-#CSS Practice:
+# CSS Practice:
 I practiced integrating CSS to enhance the design and layout of the same webpage above.
 
 Features:
@@ -40,7 +40,7 @@ blog-2.html
 style.css
 
 You can view this project live at the following URL:
-[View the webpage](https://sriya632.github.io/Front-end-practice/blob/main/index-2.html)
+[View the webpage](https://sriya632.github.io/Front-end-practice/index-2.html)
 
 This project has been a great way to sharpen my skills in HTML and CSS. By creating a simple, yet styled webpage, I have learned how to:
 Structure an HTML document with elements like headers, paragraphs, and links.
