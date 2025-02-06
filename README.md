@@ -6,4 +6,4 @@ I have created a basic blog with little informaion on html and also useful links
 
 You can view this project live at the following URL:
 
-[View the webpage]((https://sriya632.github.io/Front-end-practice/))
+[View the webpage](https://sriya632.github.io/Front-end-practice/)
