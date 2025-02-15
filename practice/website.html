@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables</title>
+  </head>
+  <body>
+    <h1>Cart Quantity</h1>
+    <button onClick="console.log(alert(`Cart Quantity: ${cartQuantity}`))">Show Quantity</button>
+    <button onClick="cartQuantity++; console.log(`Cart Quantity: ${cartQuantity}`)">Add to Cart</button>
+    <button onClick="cartQuantity+=2; console.log(`Cart Quantity: ${cartQuantity}`)">+2</button>
+    <button onClick="cartQuantity+=3; console.log(`Cart Quantity: ${cartQuantity}`)">+3</button>
+    <button onClick="cartQuantity=resetCart; console.log(alert(`Cart was reset \nCart Quantity: ${cartQuantity}`))">Reset Button</button>
+    <script>
+        let cartQuantity=0;
+        let resetCart=0;
+
+    </script>
+  </body>
+</html>
