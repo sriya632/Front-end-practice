@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Heads&Tails</title>
+    </head>
+    <body>
+        <h1>Heads Or Tails</h1>
+        <button class="js-heads" onclick="document.querySelector('.js-input').innerHTML=`You chose: Heads`;
+        ">Heads</button>
+        <button class="js-tails" onclick="document.querySelector('.js-input').innerHTML=`You chose: Tails`;">Tails</button>
+        <p class="js-input"></p>
+        <input class= "js-name-input" placeholder="Name"
+        onkeydown="if (event.key==='Enter'){
+            messageName();
+        }">
+        <button onclick="
+            messageName();
+            ">Submit</button>
+        <p class="js-message"></p>
+        <input placeholder="Type something....." class="js-type-something" onkeyup= "let element=document.querySelector('.js-type-something'); document.querySelector('.js-typing').innerHTML=element.value;">
+        <p class="js-typing"></p>
+
+       <!-- Cart quantity -->
+
+        <h1>Cart Quantity</h1>
+        
+        <button onclick="
+      console.log(`Cart quantity: ${cartQuantity}`);
+    ">Show Quantity</button>
+
+    <button onclick="
+      updateCartQuantity(1);
+    ">Add to Cart</button>
+
+    <button onclick="
+      updateCartQuantity(2);
+    ">+2</button>
+
+    <button onclick="
+      updateCartQuantity(3);
+    ">+3</button>
+
+    <button onclick="
+      updateCartQuantity(4);
+    ">+4</button>
+
+    <button onclick="
+      updateCartQuantity(5);
+    ">+5</button>
+
+    <button onclick="
+      updateCartQuantity(-1);
+    ">Remove from cart</button>
+
+    <button onclick="
+      updateCartQuantity(-2);
+    ">-2</button>
+
+    <button onclick="
+      updateCartQuantity(-3);
+    ">-3</button>
+
+    <button onclick="
+      cartQuantity = 0;
+      console.log('Cart was reset.');
+      console.log(`Cart quantity: ${cartQuantity}`);
+      displayCartQuantity();
+    ">Reset Cart</button>
+
+    <p class="js-cart-quantity"></p>
+
+    </body>
+    <script>
+       function messageName(){
+        const inputElement = document.querySelector('.js-name-input');
+        document.querySelector('.js-message')
+        .innerHTML = `Your name is: ${inputElement.value}`;
+       }
+
+       //cart quantity
+
+       let cartQuantity = 0;
+       displayCartQuantity();
+       
+        function updateCartQuantity(change) {
+            if (cartQuantity + change > 10) {
+                alert('The cart is full');
+                return;
+            }
+
+            if (cartQuantity + change < 0) {
+                alert('Not enough items in the cart');
+                return;
+            }
+
+            cartQuantity += change;
+            displayCartQuantity();
+            console.log(`Cart quantity: ${cartQuantity}`);
+        }
+        function displayCartQuantity(){
+            document.querySelector('.js-cart-quantity').innerHTML=`Cart Quantity: ${cartQuantity}`;
+        }
+
+    </script>
+</html>
